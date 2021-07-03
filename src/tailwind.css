@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  
+    --> These @directive are core responsible 
+    for generating Tailwind CSS Classes. 
+    
+    --> Without these @diretive's 
+    Tailwind wont generate any CSS Classes
+*/
+
