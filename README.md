@@ -1,4 +1,4 @@
-4-July-2021
+5-July-2021
 
 # [`Live Link`](https://taiseen.github.io/basic-tailwind-css-nn/public/index.html)
 
@@ -6,4 +6,4 @@
 * npx tailwindcss init --full ==> `tailwind.config.js` ==> with all default { property : value }
 * npx tailwindcss init ==> `tailwind.config.js` ==> with out all default { property : value } | its a blank object
 
-icon lib : https://heroicons.dev
+* icon site : https://heroicons.dev

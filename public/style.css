@@ -32393,6 +32393,7 @@ video {
   line-height: 1rem;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
+  opacity: 0.8;
   padding: 0.5rem;
   position: absolute;
   top: 0px;
@@ -32432,10 +32433,38 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.authBtn{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
 @media (min-width: 768px){
   .authBtn{
     border-width: 2px;
   }
+}
+
+.links{
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+}
+
+.links:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 99, 99, var(--tw-border-opacity));
+}
+
+.links{
+  border-right-width: 4px;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /*  
