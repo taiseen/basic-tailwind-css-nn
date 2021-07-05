@@ -32365,6 +32365,8 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+/* aggregate all CSS class togather */
+
 .card {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -32375,10 +32377,17 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.card:hover{
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .badge {
   --tw-bg-opacity: 1;
   background-color: rgba(226, 226, 213, var(--tw-bg-opacity));
   border-radius: 9999px;
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -32390,6 +32399,43 @@ video {
   --tw-text-opacity: 1;
   color: rgba(136, 136, 136, var(--tw-text-opacity));
   text-transform: uppercase;
+}
+
+.btn{
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.authBtn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 99, 99, var(--tw-bg-opacity));
+}
+
+.authBtn{
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 99, 99, var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 99, 99, var(--tw-text-opacity));
+}
+
+.authBtn:hover{
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .authBtn{
+    border-width: 2px;
+  }
 }
 
 /*  
@@ -190614,4 +190660,3 @@ video {
     --tw-backdrop-sepia: sepia(100%);
   }
 }
-
